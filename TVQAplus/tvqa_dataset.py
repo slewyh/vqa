@@ -53,12 +53,12 @@ class TVQADataset(Dataset):
         if self.vcpt_flag:
             self.vcpt_dict = load_pickle(opt.vcpt_path) if opt.vcpt_path.endswith(".pickle") \
                 else load_json(opt.vcpt_path)
-            if opt.debug:
-                self.raw_train = filter_list_dicts(self.raw_train, "vid_name", self.vcpt_dict.keys())
-                self.raw_valid = filter_list_dicts(self.raw_valid, "vid_name", self.vcpt_dict.keys())
-                if opt.test_path:
-                    self.raw_test = filter_list_dicts(self.raw_test, "vid_name", self.vcpt_dict.keys())
-                print("number of training/valid", len(self.raw_train), len(self.raw_valid))
+            # if opt.debug:
+            self.raw_train = filter_list_dicts(self.raw_train, "vid_name", self.vcpt_dict.keys())
+            self.raw_valid = filter_list_dicts(self.raw_valid, "vid_name", self.vcpt_dict.keys())
+            if opt.test_path:
+                self.raw_test = filter_list_dicts(self.raw_test, "vid_name", self.vcpt_dict.keys())
+            print("Number of training/valid", len(self.raw_train), len(self.raw_valid))
             print('Video concepts (vcpt) loaded.')
 
 
@@ -74,6 +74,7 @@ class TVQADataset(Dataset):
         self.frm_cnt_dict = load_json(self.frm_cnt_path)
 
         # build/load vocabulary
+        print("Loading word2idx path")
         self.word2idx_path = opt.word2idx_path
         self.embedding_dim = 300
         self.word2idx = {"<pad>": 0, "<unk>": 1, "<eos>": 2}
@@ -88,11 +89,12 @@ class TVQADataset(Dataset):
             # self.word2idx = load_pickle(self.word2idx_path)
             self.word2idx = load_json(self.word2idx_path)
         self.idx2word = {i: w for w, i in self.word2idx.items()}
+        print("Loading eval_object path")
 
         self.eval_object_vocab = load_json(opt.eval_object_vocab_path)
         self.eval_object_word_ids = [self.word2idx[e] if e in self.word2idx else self.word2idx["<unk>"]
                                      for e in self.eval_object_vocab]
-        print("End of Dataset Loading.")
+        print("End of Dataset Initialization.")
     def set_mode(self, mode):
         self.mode = mode
         self.inference = mode == "test"

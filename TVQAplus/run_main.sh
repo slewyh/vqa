@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 release_path=tvqa_plus_stage_features/sample
 
-debug_vcpt_path=tvqa_plus_stage_features/bottom_up_visual_sen_hq_bbt_100_debug.pickle #100 videos
+debug_vcpt_path=${release_path}/bottom_up_visual_sen_hq_bbt_100_debug.pickle #100 videos
 vcpt_path=${release_path}/tvqa_bbt_frcn_vg_hq_20_100.json
 # vfeat_path=${release_path}/tvqa_bbt_bottom_up_pool5_hq_20_100_pca.h5
 vfeat_path=${release_path}/tvqa_bbt_bottom_up_pool5_hq_20_100_pca.h5  #100 video
@@ -31,6 +31,7 @@ else
     extra_args+=(${@:1})
 fi
 
+echo 'sample data'
 python main.py \
 --train_path ${train_path} \
 --valid_path ${valid_path} \

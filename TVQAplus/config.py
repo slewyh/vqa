@@ -158,10 +158,10 @@ class BaseOptions(object):
             else:
                 raise ValueError("input_streams must be set")
 
-        if opt.debug:
-            opt.results_dir_base = opt.results_dir_base.split("/")[0] + "/debug_results"
-            opt.no_core_driver = True
-            opt.num_workers = 0
+        # if opt.debug:
+        #     opt.results_dir_base = opt.results_dir_base.split("/")[0] + "/debug_results"
+        opt.no_core_driver = True
+        opt.num_workers = 0
         opt.results_dir = opt.results_dir_base + time.strftime("_%Y_%m_%d_%H_%M_%S")
 
         self.opt = opt

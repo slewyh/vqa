@@ -10,7 +10,7 @@ import numpy as np
 from tensorboardX import SummaryWriter
 
 from utils import AverageMeter, count_parameters
-# from model.stage import STAGE
+from model.stage import STAGE
 from tvqa_dataset import TVQADataset, pad_collate, prepare_inputs
 from config import BaseOptions
 
@@ -19,7 +19,7 @@ def train(opt, dset, model, criterion, optimizer, epoch, previous_best_acc, use_
     dset.set_mode("train")
     model.train()
     train_loader = DataLoader(dset, batch_size=opt.bsz, shuffle=True,
-                              collate_fn=pad_collate, num_workers=opt.num_workers, pin_memory=True)
+                              collate_fn=pad_collate, num_workers=0, pin_memory=True)
 
     train_loss = []
     train_loss_att = []
@@ -193,7 +193,7 @@ def main():
     writer = SummaryWriter(opt.results_dir)
 
     opt.writer = writer
-    print("Loading the dataset**********")
+    print("**********Loading the dataset**********")
     dset = TVQADataset(opt)
     opt.vocab_size = len(dset.word2idx)
     model = STAGE(opt)
@@ -220,8 +220,7 @@ def main():
         verbose=True
     )
 
-    print("Training**********")
-    
+    print("**********Training**********")
     best_acc = 0.
     start_epoch = 0
     early_stopping_cnt = 0
@@ -249,9 +248,8 @@ def main():
             opt.writer.close()
             break  # early stop break
 
-        if opt.debug:
-            break
-
+        # if opt.debug:
+        #     break
     return opt.results_dir.split("/")[1], opt.debug
 
 

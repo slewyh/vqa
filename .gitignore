@@ -1,3 +1,6 @@
+#large datasets
+TVQAplus/tvqa_plus_stage_features
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
