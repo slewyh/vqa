@@ -1,17 +1,20 @@
 cd videos
 
-gdown https://drive.google.com/uc?id=1CnuojEArV4V6hLtssYkzOyhsAU3Vn_2j
-gdown https://drive.google.com/uc?id=1_8ULW0mhV_zGawHnZOFacm4hNxoLhNZ_
-gdown https://drive.google.com/uc?id=1TFSSemjcDWcXEW9yfsqg1VapsbOWI6jq
-gdown https://drive.google.com/uc?id=1IV0ukEc38_9osjDJ1Sggu-F0dqeiAiun
-gdown https://drive.google.com/uc?id=1NCYXJkCS5aU9G0Me6u_tS6g_5pQ06asQ
-gdown https://drive.google.com/uc?id=1wbnXnqVm716o5aCZkQV35AJSjgyYI62x
-gdown https://drive.google.com/uc?id=1QtnpY5CGmxaLU_zH3WWrJuYN-XgDgP0C
-gdown https://drive.google.com/uc?id=1-Dgt-jCn3TWRKhJuJb0ck98Ke9saRJG_
-gdown https://drive.google.com/uc?id=1pdzWxHa8rgdl_r1pmnue2yLykTuCsiSO
-gdown https://drive.google.com/uc?id=1APXHsy9HPq4nme18KHHH6EjiSinja6Hw
-gdown https://drive.google.com/uc?id=1MOl2Bx3zZ05tV5_Ooap_3ceOWo3YVDH_
-gdown https://drive.google.com/uc?id=1OiB3X9XUS7hyHIoHt2EIo2v-UxGBHK2a
+# gdown https://drive.google.com/uc?id=1CnuojEArV4V6hLtssYkzOyhsAU3Vn_2j
+# gdown https://drive.google.com/uc?id=1_8ULW0mhV_zGawHnZOFacm4hNxoLhNZ_
+# gdown https://drive.google.com/uc?id=1TFSSemjcDWcXEW9yfsqg1VapsbOWI6jq
+# gdown https://drive.google.com/uc?id=1IV0ukEc38_9osjDJ1Sggu-F0dqeiAiun
+# gdown https://drive.google.com/uc?id=1NCYXJkCS5aU9G0Me6u_tS6g_5pQ06asQ
+# gdown https://drive.google.com/uc?id=1wbnXnqVm716o5aCZkQV35AJSjgyYI62x
+# gdown https://drive.google.com/uc?id=1QtnpY5CGmxaLU_zH3WWrJuYN-XgDgP0C
+# gdown https://drive.google.com/uc?id=1-Dgt-jCn3TWRKhJuJb0ck98Ke9saRJG_
+# gdown https://drive.google.com/uc?id=1pdzWxHa8rgdl_r1pmnue2yLykTuCsiSO
+# gdown https://drive.google.com/uc?id=1APXHsy9HPq4nme18KHHH6EjiSinja6Hw
+# gdown https://drive.google.com/uc?id=1MOl2Bx3zZ05tV5_Ooap_3ceOWo3YVDH_
+# gdown https://drive.google.com/uc?id=1OiB3X9XUS7hyHIoHt2EIo2v-UxGBHK2a
+
+
+# .am file - 
 gdown https://drive.google.com/uc?id=1BaoR2f1mRImEmNA4YRCZzpr5nNjpd2Yc
 gdown https://drive.google.com/uc?id=1CHuFDvQvRHZcQzOEzTlpmv9KRrxmXbs9
 gdown https://drive.google.com/uc?id=1UWC381bPR6GkINZN9eZOMdMJIUjBaSaI
@@ -34,4 +37,5 @@ gdown https://drive.google.com/uc?id=1BRbJHvio70wmdtjD5vjMdM1YgbP4O5WT
 gdown https://drive.google.com/uc?id=1Ov_gkkcFODPdb_aA0JaGesvyrGtZ-JI4
 gdown https://drive.google.com/uc?id=1V64wZVxPUL5Emw4FlBowdj7Sp6ZOgRGF
 gdown https://drive.google.com/uc?id=19kbexmgnDj6yDfVM6Km6SNx3sMI5EmyE
-gdown https://drive.google.com/uc?id=19u8M3Ih4aTgq8YvibCa9GRt-TCPfXzJ9
+
+# gdown https://drive.google.com/uc?id=19u8M3Ih4aTgq8YvibCa9GRt-TCPfXzJ9
