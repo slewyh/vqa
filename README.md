@@ -1,6 +1,6 @@
 ## Generative Question Answering for Image and Video QA.
 
-This is a CS6240 project, authored by Group 3 - Ma Xiaoping and Stephanie Lew.
+
 
 GQA, a generative method proposed by [Lewis et al.](http://tvqa.cs.unc.edu/download_tvqa_plus.html), is shown to perform well for image and text data. Our paper aims to extend GQA in 2 ways:
 
